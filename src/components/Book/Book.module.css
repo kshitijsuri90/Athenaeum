@@ -3,7 +3,7 @@
   padding: 5px 2px 5px 10px;
   border: 1px solid #dedede;
   height: 325px;
-  background-color: #f2e8ed;
+  background-color: #ccf2ff;
   box-shadow: 6px 6px 10px #888;
 }
 
@@ -35,7 +35,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #874c64;
+  background: #004d66;
   background-image: url("../../assets/icons/arrow-drop-down.svg");
   background-repeat: no-repeat;
   background-position: center;

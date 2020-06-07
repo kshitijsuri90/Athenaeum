@@ -1,68 +1,46 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Athenaeum Project
 
-## Available Scripts
+This is a project for Udacity's React Nanodegree course. Consists of React components to make a bookstore.
 
-In the project directory, you can run:
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Download this repo
+* Install all project dependencies with `npm install`
+* Start the development server with `npm start`
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Folders details
+```bash
+├── CONTRIBUTING.md
+├── README.md - This file.
+├── SEARCH_TERMS.md # The whitelisted short collection of available search terms.
+├── package.json # npm package manager file.
+├── public # icons and images
+└── src
+    ├── App.css # Styles for the app.
+    ├── App.js # Root of the app.
+    ├── App.test.js # Used for testing.
+    ├── BooksAPI.js # A JavaScript API for the provided Udacity backend.
+    ├── components/Book/Book.js # JS file for the component to render each shelf items.
+    ├── containers/Home/Home.js # JS file for the component to render all components on the page.
+    ├── containers/Search/Search.js # JS file for the component to render Seacrh books page.
+    ├── icons # Helpful images for the app.
+    ├── index.css # Global styles.
+    └── index.js # Used for DOM rendering.
+```
+## Highlights:
 
-### `npm test`
+* Created a new JS file for each component; following DOT (Do One Thing).
+* Component state is passed down from parent to child component. SetState() is used to modify the state of the component.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Backend Server
 
-### `npm run build`
+The provided file [`BooksAPI.js`](src/BooksAPI.js) contains following methods to perform necessary operations on the backend:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* [`getAll`](#getall) To get all the books from the API
+* [`update`](#update) Update shelf information of the book
+* [`search`](#search) Search book in the database
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Resources & Dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* [react-router-dom](https://www.npmjs.com/package/react-router-dom)

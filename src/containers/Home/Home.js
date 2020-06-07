@@ -16,7 +16,7 @@ class Home extends Component {
     return (
       <div className={styles['list-books']}>
         <div className={styles['list-books-title']}>
-          <h1>Athenaeum - Your neighbourhood bookstore</h1>
+          <h1>Athenaeum - The Bookstore</h1>
         </div>
 
         <div className={styles['list-books-content']}>
