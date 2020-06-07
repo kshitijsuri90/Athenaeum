@@ -1,64 +1,64 @@
 .book {
-    width: 150px;
-    padding: 5px 2px 5px 10px;
-    border: 1px solid #dedede;
-    height: 325px;
-    background-color: #f2e8ed;
-    box-shadow: 6px 6px 10px #888;
-  }
-  
-  .book-title, .book-authors {
-    font-size: 0.8em;
-  }
-  
-  .book-title {
-    margin-top: 10px;
-  }
-  
-  .book-authors {
-    color: #999;
-  }
-  
-  .book-top {
-    position: relative;
-    height: 200px;
-    display: flex;
-    align-items: flex-end;
-  }
-  
-  .book-shelf-changer {
-    position: absolute;
-    right: 0;
-    bottom: -116px;
-    /*bottom: -10px;*/
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #874c64;
-    background-image: url('../../assets/icons/arrow-drop-down.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 20px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  }
-  
-  .book-shelf-changer select {
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    cursor: pointer;
-  }
-  
-  /* book cover */
-  
-  .book-cover {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    background: #eee;
-  }
-  
-  .book-cover-title {
-    padding: 20px 10px 0;
-    text-align: center;
-    font-size: 0.8em;
-  }
-  
+  width: 150px;
+  padding: 5px 2px 5px 10px;
+  border: 1px solid #dedede;
+  height: 325px;
+  background-color: #f2e8ed;
+  box-shadow: 6px 6px 10px #888;
+}
+
+.book-title,
+.book-authors {
+  font-size: 0.8em;
+}
+
+.book-title {
+  margin-top: 10px;
+}
+
+.book-authors {
+  color: #999;
+}
+
+.book-top {
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.book-shelf-changer {
+  position: absolute;
+  right: 0;
+  bottom: -116px;
+  /*bottom: -10px;*/
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #874c64;
+  background-image: url("../../assets/icons/arrow-drop-down.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.book-shelf-changer select {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* book cover */
+
+.book-cover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background: #eee;
+}
+
+.book-cover-title {
+  padding: 20px 10px 0;
+  text-align: center;
+  font-size: 0.8em;
+}

@@ -9,10 +9,10 @@ const Book = (props) => {
   return (
     <li>
       <div className={styles.book}>
-        <div className="book-top">
+        <div className={styles['book-top']}>
           {book.imageLinks && (
             <div
-              className="book-cover"
+              className={styles['book-cover']}
               style={{
                 width: 128,
                 height: 193,
@@ -20,7 +20,7 @@ const Book = (props) => {
               }}
             ></div>
           )}
-          <div className="book-shelf-changer">
+          <div className={styles['book-shelf-changer']}>
             <select
               value={shelfValue}
               onChange={(event) => updateOption(book, event.target.value)}
@@ -35,7 +35,7 @@ const Book = (props) => {
             </select>
           </div>
         </div>
-        <div className="book-title">{book.title}</div>
+        <div className={styles['book-title']}>{book.title}</div>
         {book.author &&
           book.authors.map((author, index) => (
             <div key={index} className="book-authors">

@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 import Book from '../../components/Book/Book'
-import './Search.module.css'
+import styles from './Search.module.css'
 
 // Component to render Search page
 class Search extends Component {
@@ -11,19 +11,19 @@ class Search extends Component {
 
     return (
       <div>
-        <div className="search-books-bar">
-          <Link to='/' className='close-search'>Close</Link>
-          <div className='search-books-input-wrapper'>
+        <div className={styles['search-books-bar']}>
+          <Link to='/' className={styles['close-search']}>Close</Link>
+          <div className={styles['search-books-input-wrapper']}>
             <input
-              className='search-books-results'
+              className={styles['search-books-results']}
               type='text'
               placeholder='Search books..'
               onChange={(event) => searchBooks(event.target.value)}/>
           </div>
         </div>
 
-        <div className="search-books-results">
-          <ol className="books-grid">
+        <div className={styles['search-books-results']}>
+          <ol className={styles['books-grid']}>
             {filteredBooks.map(book => (<Book book={book} key={book.id} updateOption={updateOption}/>))}
           </ol>
         </div>

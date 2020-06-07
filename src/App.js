@@ -3,7 +3,7 @@ import {Switch, Route} from 'react-router-dom'
 import * as BooksAPI from './BooksAPI'
 import Home from './containers/Home/Home'
 import Search from './containers/Search/Search'
-import './App.css'
+import styles from './App.css'
 
 class App extends Component {
   state = {
@@ -62,7 +62,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="app">
+      <div className={styles.app}>
 
         <Switch>
           <Route
