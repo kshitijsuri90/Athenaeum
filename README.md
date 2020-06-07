@@ -3,6 +3,10 @@
 This is a project for Udacity's React Nanodegree course. Consists of React components to make a bookstore.
 
 
+![Screenshot from 2020-06-07 23-04-25](https://user-images.githubusercontent.com/34534870/83975787-55f7d700-a913-11ea-8ada-7cafc46eeaf9.png)
+
+
+
 ## Getting Started
 
 * Download this repo
