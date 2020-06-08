@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './Book.module.css';
+import styles from "./Book.module.css";
 
 // Component to render individual book
 const Book = (props) => {
@@ -9,10 +9,10 @@ const Book = (props) => {
   return (
     <li>
       <div className={styles.book}>
-        <div className={styles['book-top']}>
+        <div className={styles["book-top"]}>
           {book.imageLinks && (
             <div
-              className={styles['book-cover']}
+              className={styles["book-cover"]}
               style={{
                 width: 128,
                 height: 193,
@@ -20,7 +20,7 @@ const Book = (props) => {
               }}
             ></div>
           )}
-          <div className={styles['book-shelf-changer']}>
+          <div className={styles["book-shelf-changer"]}>
             <select
               value={shelfValue}
               onChange={(event) => updateOption(book, event.target.value)}
@@ -35,10 +35,11 @@ const Book = (props) => {
             </select>
           </div>
         </div>
-        <div className={styles['book-title']}>{book.title}</div>
-        {book.author &&
+        <div className={styles["book-title"]}>{book.title}</div>
+        <div className={styles["book-title"]}>{book.author}</div>
+        {book.authors &&
           book.authors.map((author, index) => (
-            <div key={index} className="book-authors">
+            <div key={index} className={styles["book-authors"]}>
               {author}
             </div>
           ))}
